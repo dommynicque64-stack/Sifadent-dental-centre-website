@@ -1,0 +1,825 @@
+[
+  {
+    "id": "aria-prohibited-attr",
+    "impact": "serious",
+    "tags": [
+      "cat.aria",
+      "wcag2a",
+      "wcag412",
+      "EN-301-549",
+      "EN-9.4.1.2",
+      "RGAAv4",
+      "RGAA-7.1.1"
+    ],
+    "description": "Ensure ARIA attributes are not prohibited for an element's role",
+    "help": "Elements must only use permitted ARIA attributes",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=playwright",
+    "nodes": [
+      {
+        "any": [],
+        "all": [],
+        "none": [
+          {
+            "id": "aria-prohibited-attr",
+            "data": {
+              "role": null,
+              "nodeName": "span",
+              "messageKey": "noRoleSingular",
+              "prohibited": [
+                "aria-label"
+              ]
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+          }
+        ],
+        "impact": "serious",
+        "html": "<span class=\"stars\" aria-label=\"5 out of 5 stars\" data-source-loc=\"src/App.tsx:930:4\">",
+        "target": [
+          ".rating-line > .stars[aria-label=\"5 out of 5 stars\"][data-source-loc=\"src/App.tsx:930:4\"]"
+        ],
+        "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+      },
+      {
+        "any": [],
+        "all": [],
+        "none": [
+          {
+            "id": "aria-prohibited-attr",
+            "data": {
+              "role": null,
+              "nodeName": "span",
+              "messageKey": "noRoleSingular",
+              "prohibited": [
+                "aria-label"
+              ]
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+          }
+        ],
+        "impact": "serious",
+        "html": "<span class=\"stars\" aria-label=\"5 out of 5 stars\" data-source-loc=\"src/App.tsx:930:4\">",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(1) > .stars[aria-label=\"5 out of 5 stars\"][data-source-loc=\"src/App.tsx:930:4\"]"
+        ],
+        "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+      },
+      {
+        "any": [],
+        "all": [],
+        "none": [
+          {
+            "id": "aria-prohibited-attr",
+            "data": {
+              "role": null,
+              "nodeName": "span",
+              "messageKey": "noRoleSingular",
+              "prohibited": [
+                "aria-label"
+              ]
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+          }
+        ],
+        "impact": "serious",
+        "html": "<span class=\"stars\" aria-label=\"5 out of 5 stars\" data-source-loc=\"src/App.tsx:930:4\">",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(2) > .stars[aria-label=\"5 out of 5 stars\"][data-source-loc=\"src/App.tsx:930:4\"]"
+        ],
+        "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+      },
+      {
+        "any": [],
+        "all": [],
+        "none": [
+          {
+            "id": "aria-prohibited-attr",
+            "data": {
+              "role": null,
+              "nodeName": "span",
+              "messageKey": "noRoleSingular",
+              "prohibited": [
+                "aria-label"
+              ]
+            },
+            "relatedNodes": [],
+            "impact": "serious",
+            "message": "aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+          }
+        ],
+        "impact": "serious",
+        "html": "<span class=\"stars\" aria-label=\"5 out of 5 stars\" data-source-loc=\"src/App.tsx:930:4\">",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(3) > .stars[aria-label=\"5 out of 5 stars\"][data-source-loc=\"src/App.tsx:930:4\"]"
+        ],
+        "failureSummary": "Fix all of the following:\n  aria-label attribute cannot be used on \"span\" elements with no valid role attribute."
+      }
+    ]
+  },
+  {
+    "id": "color-contrast",
+    "impact": "serious",
+    "tags": [
+      "cat.color",
+      "wcag2aa",
+      "wcag143",
+      "TTv5",
+      "TT13.c",
+      "EN-301-549",
+      "EN-9.1.4.3",
+      "ACT",
+      "RGAAv4",
+      "RGAA-3.2.1"
+    ],
+    "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=playwright",
+    "nodes": [
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#968894",
+              "bgColor": "#fffafd",
+              "contrastRatio": 3.25,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"services-section section\" id=\"services\" data-source-loc=\"src/App.tsx:357:8\">",
+                "target": [
+                  "#services"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.25 (foreground color: #968894, background color: #fffafd, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p class=\"pricing-note\" data-source-loc=\"src/App.tsx:389:12\">Your care is personal. Final treatment options and costs are confirmed at your consultation.</p>",
+        "target": [
+          ".pricing-note"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.25 (foreground color: #968894, background color: #fffafd, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#e69b0f",
+              "bgColor": "#fff8fd",
+              "contrastRatio": 2.21,
+              "fontSize": "18.0pt (24px)",
+              "fontWeight": "bold",
+              "messageKey": null,
+              "expectedContrastRatio": "3:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"reviews-section section\" id=\"reviews\" data-source-loc=\"src/App.tsx:522:8\">",
+                "target": [
+                  "#reviews"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.21 (foreground color: #e69b0f, background color: #fff8fd, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<strong data-source-loc=\"src/App.tsx:528:16\">5.0</strong>",
+        "target": [
+          "strong[data-source-loc=\"src/App.tsx:528:16\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.21 (foreground color: #e69b0f, background color: #fff8fd, font size: 18.0pt (24px), font weight: bold). Expected contrast ratio of 3:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#97529e",
+              "bgColor": "#f5e9f5",
+              "contrastRatio": 4.44,
+              "fontSize": "8.3pt (11px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<span data-source-loc=\"src/App.tsx:551:20\">JK</span>",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(1) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span data-source-loc=\"src/App.tsx:551:20\">JK</span>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(1) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#9b8c9d",
+              "bgColor": "#ffffff",
+              "contrastRatio": 3.16,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"review-card\" data-source-loc=\"src/components/UI.tsx:51:4\" style=\"transform: none; opacity: 1;\">",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(1)"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<small data-source-loc=\"src/App.tsx:554:22\">Sifa-dent patient</small>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(1) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > div[data-source-loc=\"src/App.tsx:552:20\"] > small[data-source-loc=\"src/App.tsx:554:22\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#97529e",
+              "bgColor": "#f5e9f5",
+              "contrastRatio": 4.44,
+              "fontSize": "8.3pt (11px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<span data-source-loc=\"src/App.tsx:551:20\">KC</span>",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(2) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span data-source-loc=\"src/App.tsx:551:20\">KC</span>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(2) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#9b8c9d",
+              "bgColor": "#ffffff",
+              "contrastRatio": 3.16,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"review-card\" data-source-loc=\"src/components/UI.tsx:51:4\" style=\"transform: none; opacity: 1;\">",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(2)"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<small data-source-loc=\"src/App.tsx:554:22\">Sifa-dent patient</small>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(2) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > div[data-source-loc=\"src/App.tsx:552:20\"] > small[data-source-loc=\"src/App.tsx:554:22\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#97529e",
+              "bgColor": "#f5e9f5",
+              "contrastRatio": 4.44,
+              "fontSize": "8.3pt (11px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<span data-source-loc=\"src/App.tsx:551:20\">FG</span>",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(3) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span data-source-loc=\"src/App.tsx:551:20\">FG</span>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(3) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > span[data-source-loc=\"src/App.tsx:551:20\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.44 (foreground color: #97529e, background color: #f5e9f5, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#9b8c9d",
+              "bgColor": "#ffffff",
+              "contrastRatio": 3.16,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"review-card\" data-source-loc=\"src/components/UI.tsx:51:4\" style=\"transform: none; opacity: 1;\">",
+                "target": [
+                  ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(3)"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<small data-source-loc=\"src/App.tsx:554:22\">Sifa-dent patient</small>",
+        "target": [
+          ".review-card[data-source-loc=\"src/components/UI.tsx:51:4\"]:nth-child(3) > .review-author[data-source-loc=\"src/App.tsx:550:18\"] > div[data-source-loc=\"src/App.tsx:552:20\"] > small[data-source-loc=\"src/App.tsx:554:22\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.16 (foreground color: #9b8c9d, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#ffffff",
+              "bgColor": "#ed0096",
+              "contrastRatio": 4.16,
+              "fontSize": "9.0pt (12px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<a class=\"button button-pink\" href=\"https://maps.app.goo.gl/V9Hs2nkNBLvh4LDY7\" target=\"_blank\" rel=\"noopener noreferrer\" data-source-loc=\"src/App.tsx:597:18\">",
+                "target": [
+                  ".button-pink"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 4.16 (foreground color: #ffffff, background color: #ed0096, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a class=\"button button-pink\" href=\"https://maps.app.goo.gl/V9Hs2nkNBLvh4LDY7\" target=\"_blank\" rel=\"noopener noreferrer\" data-source-loc=\"src/App.tsx:597:18\">",
+        "target": [
+          ".button-pink"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.16 (foreground color: #ffffff, background color: #ed0096, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#79657a",
+              "bgColor": "#f1cde3",
+              "contrastRatio": 3.68,
+              "fontSize": "9.8pt (13px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"appointment-section section\" id=\"appointment\" data-source-loc=\"src/App.tsx:657:8\">",
+                "target": [
+                  "#appointment"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.68 (foreground color: #79657a, background color: #f1cde3, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p data-source-loc=\"src/App.tsx:666:14\">A healthier, happier smile starts here. Fill out your details and send your request to our team. We’ll help confirm your appointment time.</p>",
+        "target": [
+          "p[data-source-loc=\"src/App.tsx:666:14\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #79657a, background color: #f1cde3, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#79657a",
+              "bgColor": "#f1cde3",
+              "contrastRatio": 3.68,
+              "fontSize": "9.8pt (13px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"appointment-section section\" id=\"appointment\" data-source-loc=\"src/App.tsx:657:8\">",
+                "target": [
+                  "#appointment"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.68 (foreground color: #79657a, background color: #f1cde3, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p data-source-loc=\"src/App.tsx:671:14\">For urgent dental care, please call us directly.</p>",
+        "target": [
+          "p[data-source-loc=\"src/App.tsx:671:14\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.68 (foreground color: #79657a, background color: #f1cde3, font size: 9.8pt (13px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#886a88",
+              "bgColor": "#f1cde3",
+              "contrastRatio": 3.26,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"appointment-section section\" id=\"appointment\" data-source-loc=\"src/App.tsx:657:8\">",
+                "target": [
+                  "#appointment"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.26 (foreground color: #886a88, background color: #f1cde3, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<small data-source-loc=\"src/App.tsx:677:18\">A friendly team is just a call away</small>",
+        "target": [
+          "small[data-source-loc=\"src/App.tsx:677:18\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.26 (foreground color: #886a88, background color: #f1cde3, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#997197",
+              "bgColor": "#f1cde3",
+              "contrastRatio": 2.82,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<section class=\"appointment-section section\" id=\"appointment\" data-source-loc=\"src/App.tsx:657:8\">",
+                "target": [
+                  "#appointment"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.82 (foreground color: #997197, background color: #f1cde3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span data-source-loc=\"src/App.tsx:684:16\">Gentle care. Clear advice. A reason to smile.</span>",
+        "target": [
+          "span[data-source-loc=\"src/App.tsx:684:16\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.82 (foreground color: #997197, background color: #f1cde3, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#a39aa6",
+              "bgColor": "#ffffff",
+              "contrastRatio": 2.71,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"appointment-form-wrap\" data-source-loc=\"src/components/UI.tsx:51:4\" style=\"transform: none; opacity: 1;\">",
+                "target": [
+                  ".appointment-form-wrap"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.71 (foreground color: #a39aa6, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span class=\"optional\" data-source-loc=\"src/App.tsx:750:26\">(optional)</span>",
+        "target": [
+          ".optional"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.71 (foreground color: #a39aa6, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#9b8d9e",
+              "bgColor": "#ffffff",
+              "contrastRatio": 3.13,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<div class=\"appointment-form-wrap\" data-source-loc=\"src/components/UI.tsx:51:4\" style=\"transform: none; opacity: 1;\">",
+                "target": [
+                  ".appointment-form-wrap"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.13 (foreground color: #9b8d9e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p class=\"form-note\" data-source-loc=\"src/App.tsx:763:16\">",
+        "target": [
+          ".form-note"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.13 (foreground color: #9b8d9e, background color: #ffffff, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#9b8298",
+              "bgColor": "#fff5fb",
+              "contrastRatio": 3.26,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<footer id=\"contact\" class=\"site-footer\" data-source-loc=\"src/App.tsx:776:6\">",
+                "target": [
+                  "#contact"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.26 (foreground color: #9b8298, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<p data-source-loc=\"src/App.tsx:783:12\">Excellence in dental practice.<br data-source-loc=\"src/App.tsx:785:14\">Built for confident smiles.</p>",
+        "target": [
+          "p[data-source-loc=\"src/App.tsx:783:12\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.26 (foreground color: #9b8298, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#917b8d",
+              "bgColor": "#fff5fb",
+              "contrastRatio": 3.63,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<footer id=\"contact\" class=\"site-footer\" data-source-loc=\"src/App.tsx:776:6\">",
+                "target": [
+                  "#contact"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a href=\"https://maps.app.goo.gl/V9Hs2nkNBLvh4LDY7\" target=\"_blank\" rel=\"noopener noreferrer\" data-source-loc=\"src/App.tsx:791:12\">",
+        "target": [
+          "a[data-source-loc=\"src/App.tsx:791:12\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#917b8d",
+              "bgColor": "#fff5fb",
+              "contrastRatio": 3.63,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<footer id=\"contact\" class=\"site-footer\" data-source-loc=\"src/App.tsx:776:6\">",
+                "target": [
+                  "#contact"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a href=\"tel:+254793644620\" data-source-loc=\"src/App.tsx:803:12\">0793 644 620</a>",
+        "target": [
+          "a[data-source-loc=\"src/App.tsx:803:12\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#917b8d",
+              "bgColor": "#fff5fb",
+              "contrastRatio": 3.63,
+              "fontSize": "7.5pt (10px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<footer id=\"contact\" class=\"site-footer\" data-source-loc=\"src/App.tsx:776:6\">",
+                "target": [
+                  "#contact"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<a href=\"mailto:sifadentdentalcentre@gmail.com\" class=\"footer-email\" data-source-loc=\"src/App.tsx:804:12\">sifadentdentalcentre@gmail.com</a>",
+        "target": [
+          ".footer-email"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.63 (foreground color: #917b8d, background color: #fff5fb, font size: 7.5pt (10px), font weight: normal). Expected contrast ratio of 4.5:1"
+      },
+      {
+        "any": [
+          {
+            "id": "color-contrast",
+            "data": {
+              "fgColor": "#a38b9e",
+              "bgColor": "#fff5fb",
+              "contrastRatio": 2.92,
+              "fontSize": "6.8pt (9px)",
+              "fontWeight": "normal",
+              "messageKey": null,
+              "expectedContrastRatio": "4.5:1"
+            },
+            "relatedNodes": [
+              {
+                "html": "<footer id=\"contact\" class=\"site-footer\" data-source-loc=\"src/App.tsx:776:6\">",
+                "target": [
+                  "#contact"
+                ]
+              }
+            ],
+            "impact": "serious",
+            "message": "Element has insufficient color contrast of 2.92 (foreground color: #a38b9e, background color: #fff5fb, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+          }
+        ],
+        "all": [],
+        "none": [],
+        "impact": "serious",
+        "html": "<span data-source-loc=\"src/App.tsx:813:10\">© 2026 SIFA-DENT Dental Centre. All rights reserved.</span>",
+        "target": [
+          "span[data-source-loc=\"src/App.tsx:813:10\"]"
+        ],
+        "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.92 (foreground color: #a38b9e, background color: #fff5fb, font size: 6.8pt (9px), font weight: normal). Expected contrast ratio of 4.5:1"
+      }
+    ]
+  }
+]
